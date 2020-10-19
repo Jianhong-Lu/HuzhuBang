@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_write_board"
+            android:layout_weight="5"/>
+
+        <ImageView
+            android:id="@+id/iv_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_multi_and_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <!--表情-->
+        <ImageView
+            android:id="@+id/btn_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_sentiment_satisfied_black_24dp"/>
+
+        <!--apps 功能-->
+        <ImageView
+            android:id="@+id/btn_multimedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_face"
+            android:layout_marginLeft="65dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_picture_in_picture_black_24dp"/>
+
+        <!--语音-->
+
+        <!--见面-->
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/btn_multimedia"
+            android:layout_marginLeft="65dp"
+            android:layout_centerVertical="true"
+            android:text="语音通话"
+            android:textSize="5sp"
+             />
+
+        <Button
+            android:id="@+id/btn_meet"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/btn_chat"
+            android:layout_marginLeft="65dp"
+            android:layout_centerVertical="true"
+            android:text="线下见面"
+            android:textSize="5sp"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+

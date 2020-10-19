@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ctrl shift /启动注释 制造toolbar题头组件-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48.5dp"
+    android:background="2DD0CF"><!--颜色待定，稍后创建colors引用xml-->
+
+    <ImageButton
+        android:id="@+id/return_btn"
+        android:layout_width="48.5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="2DD0CF"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/return_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>
